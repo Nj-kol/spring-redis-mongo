@@ -38,12 +38,20 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
-		<!-- for Redis support -->
+		<!-- Redis Dependencies start -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>biz.paluch.redis</groupId>
+			<artifactId>lettuce</artifactId>
+			<version>4.5.0.Final</version>
+		</dependency>
+		<!-- Redis Dependencies end -->
+
+		<!-- Swagger dependencies start -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -55,7 +63,8 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.6.1</version>
 		</dependency>
-
+		<!-- Swagger dependencies end -->
+		
 	</dependencies>
 
 	<build>

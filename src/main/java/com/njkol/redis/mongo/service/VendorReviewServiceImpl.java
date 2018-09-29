@@ -54,6 +54,7 @@ public class VendorReviewServiceImpl implements VendorReviewService {
 			rv = new VendorReviews();
 			Vendor v = template.findOne(query, Vendor.class);
 			reviews = new ArrayList<Review>();
+			reviews.add(review);
 			rv.setId(v.getId());
 			rv.setVendorName(vendorName);
 			rv.setReviews(reviews);
